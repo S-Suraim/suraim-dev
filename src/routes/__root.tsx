@@ -37,6 +37,10 @@ export const Route = createRootRoute({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Shaik Md Suraim — Developer Portfolio" },
+      { name: "twitter:description", content: "Frontend Developer & AI/ML Enthusiast" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b69ea4b2-8a9d-4f38-9d53-91a454cd0677/id-preview-cc2dd7a9--7c79ce0a-2ea9-4fec-b10d-c5cde5c9fb53.lovable.app-1777747065774.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b69ea4b2-8a9d-4f38-9d53-91a454cd0677/id-preview-cc2dd7a9--7c79ce0a-2ea9-4fec-b10d-c5cde5c9fb53.lovable.app-1777747065774.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
