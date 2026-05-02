@@ -28,10 +28,12 @@ export function Projects() {
         {projects.map((p) => (
           <article
             key={p.title}
-            className="group rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:-translate-y-0.5"
+            className="group rounded-xl border border-border bg-card p-7 transition-all duration-300 hover:border-primary/50 hover:-translate-y-1 hover:scale-[1.01]"
             style={{ boxShadow: "var(--shadow-card)" }}
+            onMouseEnter={(e) => (e.currentTarget.style.boxShadow = "var(--shadow-card-hover)")}
+            onMouseLeave={(e) => (e.currentTarget.style.boxShadow = "var(--shadow-card)")}
           >
-            <h3 className="text-lg font-medium text-foreground mb-2 group-hover:text-primary transition-colors">
+            <h3 className="text-lg font-medium text-foreground mb-3 group-hover:text-primary transition-colors">
               {p.title}
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed mb-5">
