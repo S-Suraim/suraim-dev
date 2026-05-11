@@ -1,26 +1,37 @@
 import { Section } from "./Section";
-import { Code2, BrainCircuit, Wrench, Lightbulb } from "lucide-react";
+import { Code2, BrainCircuit, Wrench, Cloud } from "lucide-react";
 
 const groups = [
   {
-    title: "Frontend",
+    title: "Languages",
     icon: Code2,
-    items: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    items: ["Java", "Python", "JavaScript", "TypeScript", "C", "HTML5", "CSS3"],
   },
   {
-    title: "AI / ML",
+    title: "Frameworks & Libraries",
     icon: BrainCircuit,
-    items: ["TensorFlow", "Keras", "CNNs", "NumPy"],
+    items: [
+      "React.js",
+      "TensorFlow",
+      "PyTorch",
+      "Flask",
+      "NumPy",
+      "Pandas",
+      "Scikit-learn",
+      "OpenCV",
+      "Matplotlib",
+      "Tailwind CSS",
+    ],
   },
   {
-    title: "Tools",
+    title: "Tools & Technologies",
     icon: Wrench,
-    items: ["GitHub", "Streamlit"],
+    items: ["Git", "GitHub", "REST APIs", "VS Code", "Gemini API", "OpenStreetMap API"],
   },
   {
-    title: "Concepts",
-    icon: Lightbulb,
-    items: ["ML Fundamentals", "Model Training", "Deployment"],
+    title: "Cloud & Deployment",
+    icon: Cloud,
+    items: ["AWS", "Netlify"],
   },
 ];
 

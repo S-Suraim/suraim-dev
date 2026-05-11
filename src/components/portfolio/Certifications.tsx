@@ -3,24 +3,34 @@ import { Award, ArrowUpRight } from "lucide-react";
 
 const items = [
   {
+    title: "Top 10 — GDG Tech24 Hackathon",
+    subtitle: "Mohan Babu University · Among 30+ teams",
+    year: "2024",
+  },
+  {
+    title: "AI Internship — Codec Technologies",
+    subtitle: "AICTE-approved · ML workflows & image classification",
+    year: "2025",
+  },
+  {
+    title: "AI Workshop — BITS Hyderabad",
+    subtitle: "Artificial Intelligence workshop",
+    year: "",
+  },
+  {
+    title: "NSS Discipline Committee",
+    subtitle: "Volunteer · College events & social initiatives",
+    year: "",
+  },
+  {
     title: "AI Tools Workshop",
     subtitle: "United Latino Students Association",
     year: "2025",
   },
   {
-    title: "QGIS Certification",
-    subtitle: "Spatial Data Analysis",
-    year: "",
-  },
-  {
     title: "Renewable Energy Technology Fundamentals",
     subtitle: "University of Colorado Boulder",
     year: "2025",
-  },
-  {
-    title: "AWS Student Community Day",
-    subtitle: "Participation · Tech Event",
-    year: "",
   },
 ];
 
@@ -62,7 +72,7 @@ export function Certifications() {
               href="#"
               className="mt-auto inline-flex items-center gap-1.5 text-sm font-medium text-primary opacity-80 hover:opacity-100 transition-opacity"
             >
-              View Certificate
+              View Details
               <ArrowUpRight
                 size={15}
                 className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"

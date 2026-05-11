@@ -3,24 +3,24 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    title: "HACK2CARE — AI First Responder Assistant",
+    title: "Hack2Care — AI Emergency Response Platform",
     description:
-      "AI-guided emergency assistant for road accidents with first-aid instructions and location sharing. Designed for panic-friendly usability and real-world impact.",
-    tech: ["AI", "UX Design", "Concept System"],
+      "AI-powered web app providing real-time first-aid guidance during road accidents via Gemini API. Multilingual UI, geolocation with OpenStreetMap for nearby hospitals, decision-based patient assessment, and animated CPR guidance.",
+    tech: ["React.js", "TypeScript", "Tailwind CSS", "Node.js", "Gemini API"],
     href: "#",
   },
   {
-    title: "Image Classification Model",
+    title: "Fruit & Vegetable Image Classification",
     description:
-      "CNN-based classifier for 35+ fruit and vegetable categories. Built with TensorFlow and deployed using Streamlit.",
-    tech: ["TensorFlow", "Keras", "CNN", "Streamlit"],
+      "CNN-based classifier built with TensorFlow and Keras, covering dataset preprocessing, model training, and a Streamlit interface for real-time predictions.",
+    tech: ["TensorFlow", "Keras", "Streamlit", "OpenCV"],
     href: "#",
   },
   {
-    title: "Spotify Clone",
+    title: "Spotify Web Player Clone",
     description:
-      "Responsive web UI inspired by Spotify with clean layout and media controls.",
-    tech: ["HTML", "CSS", "Bootstrap"],
+      "Responsive Spotify-inspired web interface built with HTML5 and CSS3, applying modern UI design principles and clean layout structure.",
+    tech: ["HTML5", "CSS3"],
     href: "#",
   },
 ];

@@ -41,7 +41,7 @@ export function Hero() {
           </div>
 
           <p className="text-xs sm:text-sm uppercase tracking-[0.25em] text-primary mb-4">
-            Frontend Developer · AI/ML Enthusiast
+            AI/ML & Frontend Developer
           </p>
           <h1
             className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.05] bg-clip-text text-transparent"
@@ -50,8 +50,9 @@ export function Hero() {
             Shaik Md Suraim
           </h1>
           <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
-            I build clean, performant web experiences and explore real-world AI —
-            blending thoughtful design with practical engineering.
+            I build AI-powered web applications with React.js, TensorFlow, and
+            Generative AI APIs — blending responsive UI with practical
+            intelligence.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
