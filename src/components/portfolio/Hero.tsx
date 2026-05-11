@@ -1,5 +1,5 @@
 import profile from "@/assets/profile.png";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Mail, FileDown, Github, Linkedin } from "lucide-react";
 
 export function Hero() {
   return (
