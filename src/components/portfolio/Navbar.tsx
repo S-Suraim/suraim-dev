@@ -53,42 +53,57 @@ export function Navbar() {
           suraim<span className="text-primary">.</span>
         </a>
 
-        <ul className="hidden md:flex items-center gap-8 text-sm">
-          {links.map((l) => {
-            const isActive = active === l.href.slice(1);
-            return (
-              <li key={l.href}>
-                <a
-                  href={l.href}
-                  className={`relative transition-colors ${
-                    isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
-                  }`}
-                >
-                  {l.label}
-                  <span
-                    className={`absolute -bottom-1.5 left-0 h-px bg-primary transition-all duration-300 ${
-                      isActive ? "w-full" : "w-0"
+        <div className="flex items-center gap-6">
+          <ul className="hidden md:flex items-center gap-8 text-sm">
+            {links.map((l) => {
+              const isActive = active === l.href.slice(1);
+              return (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    className={`relative transition-colors ${
+                      isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                     }`}
-                  />
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+                  >
+                    {l.label}
+                    <span
+                      className={`absolute -bottom-1.5 left-0 h-px bg-primary transition-all duration-300 ${
+                        isActive ? "w-full" : "w-0"
+                      }`}
+                    />
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
 
-        <button
-          aria-label="Toggle menu"
-          className="md:hidden text-foreground"
-          onClick={() => setOpen((v) => !v)}
-        >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            {open ? (
-              <path d="M6 6l12 12M6 18L18 6" strokeLinecap="round" />
-            ) : (
-              <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" />
-            )}
-          </svg>
-        </button>
+          <a
+            href="/Shaik_Md_Suraim_Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden sm:inline-flex items-center justify-center rounded-md px-4 py-2 text-xs sm:text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
+            style={{
+              backgroundImage: "var(--gradient-text)",
+              boxShadow: "var(--shadow-glow)",
+            }}
+          >
+            Resume
+          </a>
+
+          <button
+            aria-label="Toggle menu"
+            className="md:hidden text-foreground"
+            onClick={() => setOpen((v) => !v)}
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              {open ? (
+                <path d="M6 6l12 12M6 18L18 6" strokeLinecap="round" />
+              ) : (
+                <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" />
+              )}
+            </svg>
+          </button>
+        </div>
       </nav>
 
       {open && (
