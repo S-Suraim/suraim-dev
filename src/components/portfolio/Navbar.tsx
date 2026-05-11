@@ -48,35 +48,35 @@ export function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <nav className="relative max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#home" className="font-semibold tracking-tight text-foreground">
           suraim<span className="text-primary">.</span>
         </a>
 
-        <div className="flex items-center gap-6">
-          <ul className="hidden md:flex items-center gap-8 text-sm">
-            {links.map((l) => {
-              const isActive = active === l.href.slice(1);
-              return (
-                <li key={l.href}>
-                  <a
-                    href={l.href}
-                    className={`relative transition-colors ${
-                      isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+        <ul className="hidden md:flex items-center gap-8 text-sm absolute left-1/2 -translate-x-1/2">
+          {links.map((l) => {
+            const isActive = active === l.href.slice(1);
+            return (
+              <li key={l.href}>
+                <a
+                  href={l.href}
+                  className={`relative transition-colors ${
+                    isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {l.label}
+                  <span
+                    className={`absolute -bottom-1.5 left-0 h-px bg-primary transition-all duration-300 ${
+                      isActive ? "w-full" : "w-0"
                     }`}
-                  >
-                    {l.label}
-                    <span
-                      className={`absolute -bottom-1.5 left-0 h-px bg-primary transition-all duration-300 ${
-                        isActive ? "w-full" : "w-0"
-                      }`}
-                    />
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+                  />
+                </a>
+              </li>
+            );
+          })}
+        </ul>
 
+        <div className="flex items-center gap-3">
           <a
             href="/Shaik_Md_Suraim_Resume.pdf"
             target="_blank"
