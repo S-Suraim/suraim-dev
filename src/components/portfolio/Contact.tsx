@@ -1,7 +1,7 @@
 import { Section } from "./Section";
 
 const items = [
-  { label: "Email", value: "bablusuraim123@gmail.com", href: "mailto:bablusuraim123@gmail.com" },
+  { label: "Email", value: "balusuraim123@gmail.com", href: "mailto:balusuraim123@gmail.com" },
   { label: "Phone", value: "+91 90320 16038", href: "tel:+919032016038" },
   { label: "LinkedIn", value: "in/s-md-suraim", href: "https://www.linkedin.com/in/s-md-suraim-053891237/" },
   { label: "GitHub", value: "@S-Suraim", href: "https://github.com/S-Suraim" },
@@ -34,7 +34,7 @@ export function Contact() {
             const data = new FormData(e.currentTarget);
             const subject = encodeURIComponent(`Portfolio contact from ${data.get("name")}`);
             const body = encodeURIComponent(`${data.get("message")}\n\n— ${data.get("name")} (${data.get("email")})`);
-            window.location.href = `mailto:bablusuraim123@gmail.com?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:balusuraim123@gmail.com?subject=${subject}&body=${body}`;
           }}
           className="rounded-xl border border-border bg-card p-6 space-y-4"
           style={{ boxShadow: "var(--shadow-card)" }}
