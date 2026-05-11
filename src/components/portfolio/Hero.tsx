@@ -57,8 +57,22 @@ export function Hero() {
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <a
+              href="/Shaik_Md_Suraim_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              download
+              className="inline-flex items-center justify-center gap-2 rounded-md px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02]"
+              style={{
+                backgroundImage: "var(--gradient-text)",
+                boxShadow: "var(--shadow-glow)",
+              }}
+            >
+              <FileDown size={16} />
+              Download Resume
+            </a>
+            <a
               href="#projects"
-              className="group inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground px-6 py-2.5 text-sm font-medium hover:opacity-90 transition-opacity"
+              className="group inline-flex items-center justify-center gap-2 rounded-md border border-border bg-secondary/40 text-foreground px-6 py-2.5 text-sm font-medium hover:bg-secondary transition-colors"
             >
               View Projects
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
@@ -68,7 +82,28 @@ export function Hero() {
               className="inline-flex items-center justify-center gap-2 rounded-md border border-border bg-secondary/40 text-foreground px-6 py-2.5 text-sm font-medium hover:bg-secondary transition-colors"
             >
               <Mail size={16} />
-              Contact Me
+              Contact
+            </a>
+          </div>
+
+          <div className="mt-6 flex items-center gap-3">
+            <a
+              href="https://github.com/S-Suraim"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+              className="inline-flex items-center justify-center w-10 h-10 rounded-md border border-border bg-card/60 text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors"
+            >
+              <Github size={18} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/s-md-suraim-053891237/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+              className="inline-flex items-center justify-center w-10 h-10 rounded-md border border-border bg-card/60 text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors"
+            >
+              <Linkedin size={18} />
             </a>
           </div>
         </div>
